@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owen - Super Team</title>
+    <link rel="stylesheet" href="../styles/style.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background: #34495e;
+        }
+
+        main {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 3rem 0;
+        }
+
+        .profile-card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 2rem;
+            margin: 1rem 0;
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            background: #34495e;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🚀 Super Team Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="profile-card">
+            <img src="data:image/webp;base64,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" alt="Owen" class="profile-img">
+            <h2>Owen Lianggara</h2>
+            
+            <section>
+                <h3>🎯 Hobi</h3>
+                <ul>
+                    <li>Coding</li>
+                    <li>Baca Buku</li>
+                </ul>
+            </section>
+            
+            <section>
+                <h3>💻 Keahlian</h3>
+                <ul>
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>Critical Thinking</li>
+                    <li>UI/UX Design</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Super Team. All rights reserved.</p>
+    </footer>
+</body>
+</html>
